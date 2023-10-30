@@ -10,6 +10,7 @@ source:
   sha256: 954b86dcf3dad64562ce7b9167485ac42c47fcc668d82ea99874001aa585f53e
 
 build:
+  skip: True  # [s390x]
   number: 0
   script: {{ PYTHON }} -m pip install --no-deps --no-build-isolation . -vv
 
