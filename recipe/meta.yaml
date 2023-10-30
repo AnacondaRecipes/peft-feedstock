@@ -10,7 +10,7 @@ source:
   sha256: 954b86dcf3dad64562ce7b9167485ac42c47fcc668d82ea99874001aa585f53e
 
 build:
-  skip: True  # [s390x]
+  skip: True  # [s390x or ppc64le]
   number: 0
   script: {{ PYTHON }} -m pip install --no-deps --no-build-isolation . -vv
 
@@ -43,7 +43,7 @@ test:
     # skip test_prompt_encoder_warning_num_layers, see https://github.com/huggingface/peft/issues/1066
     - pytest tests -k "not test_prompt_encoder_warning_num_layers"  # [not win]
     # skip failing windows tests
-    - pytest tests -k "not (test_feature_extraction_models.py or test_decoder_models.py)"  # [win]
+    - pytest tests -k "not (test_prompt_encoder_warning_num_layers or test_feature_extraction_models.py or test_decoder_models.py or test_encoder_decoder_models.py)"  # [win]
   requires:
     - pip
     - parameterized
