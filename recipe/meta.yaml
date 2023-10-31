@@ -50,13 +50,14 @@ test:
     - datasets
     - diffusers <0.21.0
     - pytest
+    - pytest-xdist
 
 about:
   home: https://github.com/huggingface/peft
   license: Apache-2.0
   license_file: LICENSE
   license_family: Apache
-  dev_url: https://github.com/huggingface/peft/tree/main
+  dev_url: https://github.com/huggingface/peft
   doc_url: https://huggingface.co/docs/peft/index
   summary: state of the art parameter efficient fine tuning peft methods
   description: | 
