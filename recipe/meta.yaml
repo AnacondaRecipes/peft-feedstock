@@ -41,9 +41,7 @@ test:
   commands:
     - pip check
     # skip test_prompt_encoder_warning_num_layers, see https://github.com/huggingface/peft/issues/1066
-    - pytest tests -k "not test_prompt_encoder_warning_num_layers"  # [not win]
-    # skip failing windows tests
-    - pytest tests -k "not (test_prompt_encoder_warning_num_layers or test_feature_extraction_models.py or test_decoder_models.py or test_encoder_decoder_models.py)"  # [win]
+    - pytest tests -k "not test_prompt_encoder_warning_num_layers"
   requires:
     - pip
     - parameterized
