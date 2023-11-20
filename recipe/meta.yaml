@@ -41,7 +41,7 @@ test:
   commands:
     - pip check
     # skip test_prompt_encoder_warning_num_layers, see https://github.com/huggingface/peft/issues/1066
-    - pytest -v tests -k "not test_prompt_encoder_warning_num_layers"
+    - pytest -v -n auto tests -k "not test_prompt_encoder_warning_num_layers"
   requires:
     - pip
     - parameterized
