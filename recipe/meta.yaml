@@ -1,0 +1,69 @@
+{% set name = "peft" %}
+{% set version = "0.5.0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://github.com/huggingface/peft/archive/v{{ version }}.tar.gz
+  sha256: 954b86dcf3dad64562ce7b9167485ac42c47fcc668d82ea99874001aa585f53e
+
+build:
+  skip: True  # [s390x or ppc64le]
+  number: 0
+  script: {{ PYTHON }} -m pip install --no-deps --no-build-isolation . -vv
+
+
+requirements:
+  host:
+    - python
+    - pip
+    - wheel
+    - setuptools
+  run:
+    - python
+    - numpy >=1.17
+    - packaging >=20.0
+    - psutil
+    - pyyaml
+    - pytorch >=1.13.0
+    - transformers
+    - tqdm
+    - huggingface_accelerate >=0.21.0
+    - safetensors
+
+test:
+  source_files:
+    - tests
+  imports:
+    - peft
+  commands:
+    - pip check
+    # skip test_prompt_encoder_warning_num_layers, see https://github.com/huggingface/peft/issues/1066
+    - pytest -v tests -k "not test_prompt_encoder_warning_num_layers"
+  requires:
+    - pip
+    - parameterized
+    - datasets
+    - diffusers <0.21.0
+    - pytest
+    - pytest-xdist
+
+about:
+  home: https://github.com/huggingface/peft
+  license: Apache-2.0
+  license_file: LICENSE
+  license_family: Apache
+  dev_url: https://github.com/huggingface/peft
+  doc_url: https://huggingface.co/docs/peft/index
+  summary: state of the art parameter efficient fine tuning peft methods
+  description: | 
+    Parameter-Efficient Fine-Tuning (PEFT) methods enable efficient adaptation of pre-trained language models (PLMs) to various
+    downstream applications without fine-tuning all the model's parameters. Fine-tuning large-scale PLMs is often prohibitively costly. 
+    In this regard, PEFT methods only fine-tune a small number of (extra) model parameters, thereby greatly decreasing the computational 
+    and storage costs. Recent State-of-the-Art PEFT techniques achieve performance comparable to that of full fine-tuning.
+
+extra:
+  recipe-maintainers:
+    - markw77
