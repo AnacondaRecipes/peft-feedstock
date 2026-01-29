@@ -1,5 +1,5 @@
 {% set name = "peft" %}
-{% set version = "0.5.0" %}
+{% set version = "0.18.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/huggingface/peft/archive/v{{ version }}.tar.gz
-  sha256: 954b86dcf3dad64562ce7b9167485ac42c47fcc668d82ea99874001aa585f53e
+  sha256: 15f17cef72fd1091ae57045b1ec54c3123ae8c83128614b202f4920f86582078
 
 build:
-  skip: True  # [s390x or ppc64le]
   number: 0
   script: {{ PYTHON }} -m pip install --no-deps --no-build-isolation . -vv
+  skip: True  # [py<310]
 
 
 requirements:
@@ -32,6 +32,7 @@ requirements:
     - tqdm
     - huggingface_accelerate >=0.21.0
     - safetensors
+    - huggingface_hub >=0.25.0
 
 test:
   source_files:
@@ -40,15 +41,17 @@ test:
     - peft
   commands:
     - pip check
-    # skip test_prompt_encoder_warning_num_layers, see https://github.com/huggingface/peft/issues/1066
-    - pytest -v tests -k "not test_prompt_encoder_warning_num_layers"
+    - pytest -vv tests
   requires:
     - pip
-    - parameterized
-    - datasets
-    - diffusers <0.21.0
     - pytest
     - pytest-xdist
+    - parameterized
+    - datasets
+    - diffusers
+    - scipy
+    - protobuf
+    - sentencepiece
 
 about:
   home: https://github.com/huggingface/peft

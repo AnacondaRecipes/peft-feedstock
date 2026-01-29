@@ -1,0 +1,1018 @@
+WARNING: No numpy version specified in conda_build_config.yaml.  Falling back to default numpy value of 1.26
+Adding in variants from internal_defaults
+Adding in variants from /Users/lundby/anaconda/aggregate/conda_build_config.yaml
+Adding in variants from config.variant
+WARNING: Number of parsed outputs does not match detected raw metadata blocks. Identified output block may be wrong! If you are using Jinja conditionals to include or exclude outputs, consider using `skip: true  # [condition]` instead.
+Attempting to finalize metadata for peft
+Reloading output folder: ...working... done
+Getting pinned dependencies: ...working... done
+Reloading output folder: ...working... done
+Getting pinned dependencies: ...working... done
+WARNING: Adding .* to spec 'transformers 4.57.1' to ensure satisfiability.  Please consider putting {{{{ var_name }}}}.* or some relational operator (>/</>=/<=) on this spec in meta.yaml, or if req is also a build req, using {{{{ pin_compatible() }}}} jinja2 function instead.  See https://conda.io/docs/user-guide/tasks/build-packages/variants.html#pinning-at-the-variant-level
+BUILD START: ['peft-0.18.1-py312hca03da5_0.conda']
+Reloading output folder: ...working... done
+Solving environment (_h_env): ...working... done
+
+## Package Plan ##
+
+  environment location: /Users/lundby/anaconda/c22/peft_1769708449784/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl
+
+
+The following NEW packages will be INSTALLED:
+
+    bzip2:           1.0.8-h80987f9_6       
+    ca-certificates: 2025.12.2-hca03da5_0   
+    expat:           2.7.3-h50f4ffc_4       
+    libcxx:          21.1.8-hb4ce287_0      
+    libexpat:        2.7.3-h50f4ffc_4       
+    libffi:          3.4.4-hca03da5_1       
+    libzlib:         1.3.1-h5f15de7_0       
+    ncurses:         6.5-hee39554_0         
+    openssl:         3.0.18-h9b4081a_0      
+    packaging:       25.0-py312hca03da5_1   
+    pip:             25.3-pyhc872135_0      
+    python:          3.12.12-h2bfc596_1     
+    readline:        8.3-h0b18652_0         
+    setuptools:      80.10.1-py312hca03da5_0
+    sqlite:          3.51.1-hab6afd1_0      
+    tk:              8.6.15-hcd8a7d5_0      
+    tzdata:          2025c-he532380_0       
+    wheel:           0.46.3-py312hca03da5_0 
+    xz:              5.6.4-h80987f9_1       
+    zlib:            1.3.1-h5f15de7_0       
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+Reloading output folder: ...working... done
+Solving environment (_test_env): ...working... done
+Source cache directory is: /Users/lundby/anaconda/c22/src_cache
+Downloading source to cache: v0.18.1_15f17cef72.tar.gz
+Downloading https://github.com/huggingface/peft/archive/v0.18.1.tar.gz
+Success
+  Running command Preparing metadata (pyproject.toml)
+  /Users/lundby/anaconda/c22/peft_1769708449784/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl/lib/python3.12/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+  !!
+
+          ********************************************************************************
+          Please consider removing the following classifiers in favor of a SPDX license expression:
+
+          License :: OSI Approved :: Apache Software License
+
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+
+  !!
+    self._finalize_license_expression()
+  running dist_info
+  creating /private/tmp/pip-modern-metadata-stscy_7g/peft.egg-info
+  writing /private/tmp/pip-modern-metadata-stscy_7g/peft.egg-info/PKG-INFO
+  writing dependency_links to /private/tmp/pip-modern-metadata-stscy_7g/peft.egg-info/dependency_links.txt
+  writing requirements to /private/tmp/pip-modern-metadata-stscy_7g/peft.egg-info/requires.txt
+  writing top-level names to /private/tmp/pip-modern-metadata-stscy_7g/peft.egg-info/top_level.txt
+  writing manifest file '/private/tmp/pip-modern-metadata-stscy_7g/peft.egg-info/SOURCES.txt'
+  reading manifest file '/private/tmp/pip-modern-metadata-stscy_7g/peft.egg-info/SOURCES.txt'
+  adding license file 'LICENSE'
+  writing manifest file '/private/tmp/pip-modern-metadata-stscy_7g/peft.egg-info/SOURCES.txt'
+  creating '/private/tmp/pip-modern-metadata-stscy_7g/peft-0.18.1.dist-info'
+  Running command Building wheel for peft (pyproject.toml)
+  /Users/lundby/anaconda/c22/peft_1769708449784/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl/lib/python3.12/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+  !!
+
+          ********************************************************************************
+          Please consider removing the following classifiers in favor of a SPDX license expression:
+
+          License :: OSI Approved :: Apache Software License
+
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+
+  !!
+    self._finalize_license_expression()
+  running bdist_wheel
+  running build
+  running build_py
+  creating build/lib/peft
+  copying src/peft/config.py -> build/lib/peft
+  copying src/peft/__init__.py -> build/lib/peft
+  copying src/peft/peft_model.py -> build/lib/peft
+  copying src/peft/functional.py -> build/lib/peft
+  copying src/peft/mixed_model.py -> build/lib/peft
+  copying src/peft/mapping_func.py -> build/lib/peft
+  copying src/peft/import_utils.py -> build/lib/peft
+  copying src/peft/mapping.py -> build/lib/peft
+  copying src/peft/helpers.py -> build/lib/peft
+  copying src/peft/auto.py -> build/lib/peft
+  creating build/lib/peft/utils
+  copying src/peft/utils/loftq_utils.py -> build/lib/peft/utils
+  copying src/peft/utils/constants.py -> build/lib/peft/utils
+  copying src/peft/utils/hotswap.py -> build/lib/peft/utils
+  copying src/peft/utils/incremental_pca.py -> build/lib/peft/utils
+  copying src/peft/utils/__init__.py -> build/lib/peft/utils
+  copying src/peft/utils/merge_utils.py -> build/lib/peft/utils
+  copying src/peft/utils/other.py -> build/lib/peft/utils
+  copying src/peft/utils/warning.py -> build/lib/peft/utils
+  copying src/peft/utils/peft_types.py -> build/lib/peft/utils
+  copying src/peft/utils/save_and_load.py -> build/lib/peft/utils
+  copying src/peft/utils/integrations.py -> build/lib/peft/utils
+  creating build/lib/peft/tuners
+  copying src/peft/tuners/_buffer_dict.py -> build/lib/peft/tuners
+  copying src/peft/tuners/__init__.py -> build/lib/peft/tuners
+  copying src/peft/tuners/lycoris_utils.py -> build/lib/peft/tuners
+  copying src/peft/tuners/tuners_utils.py -> build/lib/peft/tuners
+  creating build/lib/peft/optimizers
+  copying src/peft/optimizers/loraplus.py -> build/lib/peft/optimizers
+  copying src/peft/optimizers/__init__.py -> build/lib/peft/optimizers
+  copying src/peft/optimizers/lorafa.py -> build/lib/peft/optimizers
+  creating build/lib/peft/tuners/prompt_tuning
+  copying src/peft/tuners/prompt_tuning/config.py -> build/lib/peft/tuners/prompt_tuning
+  copying src/peft/tuners/prompt_tuning/__init__.py -> build/lib/peft/tuners/prompt_tuning
+  copying src/peft/tuners/prompt_tuning/model.py -> build/lib/peft/tuners/prompt_tuning
+  creating build/lib/peft/tuners/hra
+  copying src/peft/tuners/hra/config.py -> build/lib/peft/tuners/hra
+  copying src/peft/tuners/hra/__init__.py -> build/lib/peft/tuners/hra
+  copying src/peft/tuners/hra/model.py -> build/lib/peft/tuners/hra
+  copying src/peft/tuners/hra/layer.py -> build/lib/peft/tuners/hra
+  creating build/lib/peft/tuners/loha
+  copying src/peft/tuners/loha/config.py -> build/lib/peft/tuners/loha
+  copying src/peft/tuners/loha/__init__.py -> build/lib/peft/tuners/loha
+  copying src/peft/tuners/loha/model.py -> build/lib/peft/tuners/loha
+  copying src/peft/tuners/loha/layer.py -> build/lib/peft/tuners/loha
+  creating build/lib/peft/tuners/lokr
+  copying src/peft/tuners/lokr/config.py -> build/lib/peft/tuners/lokr
+  copying src/peft/tuners/lokr/__init__.py -> build/lib/peft/tuners/lokr
+  copying src/peft/tuners/lokr/model.py -> build/lib/peft/tuners/lokr
+  copying src/peft/tuners/lokr/layer.py -> build/lib/peft/tuners/lokr
+  creating build/lib/peft/tuners/vera
+  copying src/peft/tuners/vera/config.py -> build/lib/peft/tuners/vera
+  copying src/peft/tuners/vera/__init__.py -> build/lib/peft/tuners/vera
+  copying src/peft/tuners/vera/model.py -> build/lib/peft/tuners/vera
+  copying src/peft/tuners/vera/layer.py -> build/lib/peft/tuners/vera
+  copying src/peft/tuners/vera/bnb.py -> build/lib/peft/tuners/vera
+  creating build/lib/peft/tuners/ln_tuning
+  copying src/peft/tuners/ln_tuning/config.py -> build/lib/peft/tuners/ln_tuning
+  copying src/peft/tuners/ln_tuning/__init__.py -> build/lib/peft/tuners/ln_tuning
+  copying src/peft/tuners/ln_tuning/model.py -> build/lib/peft/tuners/ln_tuning
+  copying src/peft/tuners/ln_tuning/layer.py -> build/lib/peft/tuners/ln_tuning
+  creating build/lib/peft/tuners/cpt
+  copying src/peft/tuners/cpt/config.py -> build/lib/peft/tuners/cpt
+  copying src/peft/tuners/cpt/__init__.py -> build/lib/peft/tuners/cpt
+  copying src/peft/tuners/cpt/model.py -> build/lib/peft/tuners/cpt
+  creating build/lib/peft/tuners/delora
+  copying src/peft/tuners/delora/config.py -> build/lib/peft/tuners/delora
+  copying src/peft/tuners/delora/__init__.py -> build/lib/peft/tuners/delora
+  copying src/peft/tuners/delora/model.py -> build/lib/peft/tuners/delora
+  copying src/peft/tuners/delora/layer.py -> build/lib/peft/tuners/delora
+  creating build/lib/peft/tuners/boft
+  copying src/peft/tuners/boft/config.py -> build/lib/peft/tuners/boft
+  copying src/peft/tuners/boft/__init__.py -> build/lib/peft/tuners/boft
+  copying src/peft/tuners/boft/model.py -> build/lib/peft/tuners/boft
+  copying src/peft/tuners/boft/layer.py -> build/lib/peft/tuners/boft
+  creating build/lib/peft/tuners/waveft
+  copying src/peft/tuners/waveft/config.py -> build/lib/peft/tuners/waveft
+  copying src/peft/tuners/waveft/constants.py -> build/lib/peft/tuners/waveft
+  copying src/peft/tuners/waveft/__init__.py -> build/lib/peft/tuners/waveft
+  copying src/peft/tuners/waveft/model.py -> build/lib/peft/tuners/waveft
+  copying src/peft/tuners/waveft/wavelet.py -> build/lib/peft/tuners/waveft
+  copying src/peft/tuners/waveft/layer.py -> build/lib/peft/tuners/waveft
+  copying src/peft/tuners/waveft/waverec2d.py -> build/lib/peft/tuners/waveft
+  creating build/lib/peft/tuners/c3a
+  copying src/peft/tuners/c3a/config.py -> build/lib/peft/tuners/c3a
+  copying src/peft/tuners/c3a/__init__.py -> build/lib/peft/tuners/c3a
+  copying src/peft/tuners/c3a/model.py -> build/lib/peft/tuners/c3a
+  copying src/peft/tuners/c3a/utils.py -> build/lib/peft/tuners/c3a
+  copying src/peft/tuners/c3a/layer.py -> build/lib/peft/tuners/c3a
+  creating build/lib/peft/tuners/p_tuning
+  copying src/peft/tuners/p_tuning/config.py -> build/lib/peft/tuners/p_tuning
+  copying src/peft/tuners/p_tuning/__init__.py -> build/lib/peft/tuners/p_tuning
+  copying src/peft/tuners/p_tuning/model.py -> build/lib/peft/tuners/p_tuning
+  creating build/lib/peft/tuners/mixed
+  copying src/peft/tuners/mixed/__init__.py -> build/lib/peft/tuners/mixed
+  copying src/peft/tuners/mixed/model.py -> build/lib/peft/tuners/mixed
+  creating build/lib/peft/tuners/trainable_tokens
+  copying src/peft/tuners/trainable_tokens/config.py -> build/lib/peft/tuners/trainable_tokens
+  copying src/peft/tuners/trainable_tokens/__init__.py -> build/lib/peft/tuners/trainable_tokens
+  copying src/peft/tuners/trainable_tokens/model.py -> build/lib/peft/tuners/trainable_tokens
+  copying src/peft/tuners/trainable_tokens/layer.py -> build/lib/peft/tuners/trainable_tokens
+  creating build/lib/peft/tuners/bone
+  copying src/peft/tuners/bone/config.py -> build/lib/peft/tuners/bone
+  copying src/peft/tuners/bone/__init__.py -> build/lib/peft/tuners/bone
+  copying src/peft/tuners/bone/model.py -> build/lib/peft/tuners/bone
+  copying src/peft/tuners/bone/layer.py -> build/lib/peft/tuners/bone
+  creating build/lib/peft/tuners/road
+  copying src/peft/tuners/road/config.py -> build/lib/peft/tuners/road
+  copying src/peft/tuners/road/__init__.py -> build/lib/peft/tuners/road
+  copying src/peft/tuners/road/model.py -> build/lib/peft/tuners/road
+  copying src/peft/tuners/road/layer.py -> build/lib/peft/tuners/road
+  copying src/peft/tuners/road/bnb.py -> build/lib/peft/tuners/road
+  creating build/lib/peft/tuners/fourierft
+  copying src/peft/tuners/fourierft/config.py -> build/lib/peft/tuners/fourierft
+  copying src/peft/tuners/fourierft/__init__.py -> build/lib/peft/tuners/fourierft
+  copying src/peft/tuners/fourierft/model.py -> build/lib/peft/tuners/fourierft
+  copying src/peft/tuners/fourierft/layer.py -> build/lib/peft/tuners/fourierft
+  creating build/lib/peft/tuners/vblora
+  copying src/peft/tuners/vblora/config.py -> build/lib/peft/tuners/vblora
+  copying src/peft/tuners/vblora/__init__.py -> build/lib/peft/tuners/vblora
+  copying src/peft/tuners/vblora/model.py -> build/lib/peft/tuners/vblora
+  copying src/peft/tuners/vblora/layer.py -> build/lib/peft/tuners/vblora
+  creating build/lib/peft/tuners/prefix_tuning
+  copying src/peft/tuners/prefix_tuning/config.py -> build/lib/peft/tuners/prefix_tuning
+  copying src/peft/tuners/prefix_tuning/__init__.py -> build/lib/peft/tuners/prefix_tuning
+  copying src/peft/tuners/prefix_tuning/model.py -> build/lib/peft/tuners/prefix_tuning
+  creating build/lib/peft/tuners/adaption_prompt
+  copying src/peft/tuners/adaption_prompt/config.py -> build/lib/peft/tuners/adaption_prompt
+  copying src/peft/tuners/adaption_prompt/__init__.py -> build/lib/peft/tuners/adaption_prompt
+  copying src/peft/tuners/adaption_prompt/model.py -> build/lib/peft/tuners/adaption_prompt
+  copying src/peft/tuners/adaption_prompt/utils.py -> build/lib/peft/tuners/adaption_prompt
+  copying src/peft/tuners/adaption_prompt/layer.py -> build/lib/peft/tuners/adaption_prompt
+  creating build/lib/peft/tuners/miss
+  copying src/peft/tuners/miss/config.py -> build/lib/peft/tuners/miss
+  copying src/peft/tuners/miss/__init__.py -> build/lib/peft/tuners/miss
+  copying src/peft/tuners/miss/model.py -> build/lib/peft/tuners/miss
+  copying src/peft/tuners/miss/layer.py -> build/lib/peft/tuners/miss
+  creating build/lib/peft/tuners/ia3
+  copying src/peft/tuners/ia3/config.py -> build/lib/peft/tuners/ia3
+  copying src/peft/tuners/ia3/__init__.py -> build/lib/peft/tuners/ia3
+  copying src/peft/tuners/ia3/model.py -> build/lib/peft/tuners/ia3
+  copying src/peft/tuners/ia3/layer.py -> build/lib/peft/tuners/ia3
+  copying src/peft/tuners/ia3/bnb.py -> build/lib/peft/tuners/ia3
+  creating build/lib/peft/tuners/osf
+  copying src/peft/tuners/osf/config.py -> build/lib/peft/tuners/osf
+  copying src/peft/tuners/osf/__init__.py -> build/lib/peft/tuners/osf
+  copying src/peft/tuners/osf/model.py -> build/lib/peft/tuners/osf
+  copying src/peft/tuners/osf/utils.py -> build/lib/peft/tuners/osf
+  copying src/peft/tuners/osf/layer.py -> build/lib/peft/tuners/osf
+  creating build/lib/peft/tuners/xlora
+  copying src/peft/tuners/xlora/classifier.py -> build/lib/peft/tuners/xlora
+  copying src/peft/tuners/xlora/config.py -> build/lib/peft/tuners/xlora
+  copying src/peft/tuners/xlora/__init__.py -> build/lib/peft/tuners/xlora
+  copying src/peft/tuners/xlora/model.py -> build/lib/peft/tuners/xlora
+  copying src/peft/tuners/xlora/layer.py -> build/lib/peft/tuners/xlora
+  creating build/lib/peft/tuners/adalora
+  copying src/peft/tuners/adalora/config.py -> build/lib/peft/tuners/adalora
+  copying src/peft/tuners/adalora/__init__.py -> build/lib/peft/tuners/adalora
+  copying src/peft/tuners/adalora/model.py -> build/lib/peft/tuners/adalora
+  copying src/peft/tuners/adalora/gptq.py -> build/lib/peft/tuners/adalora
+  copying src/peft/tuners/adalora/layer.py -> build/lib/peft/tuners/adalora
+  copying src/peft/tuners/adalora/bnb.py -> build/lib/peft/tuners/adalora
+  creating build/lib/peft/tuners/multitask_prompt_tuning
+  copying src/peft/tuners/multitask_prompt_tuning/config.py -> build/lib/peft/tuners/multitask_prompt_tuning
+  copying src/peft/tuners/multitask_prompt_tuning/__init__.py -> build/lib/peft/tuners/multitask_prompt_tuning
+  copying src/peft/tuners/multitask_prompt_tuning/model.py -> build/lib/peft/tuners/multitask_prompt_tuning
+  creating build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/dora.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/config.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/variants.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/hqq.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/aqlm.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/tp_layer.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/arrow.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/__init__.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/model.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/inc.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/eetq.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/eva.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/awq.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/gptq.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/torchao.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/layer.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/bnb.py -> build/lib/peft/tuners/lora
+  copying src/peft/tuners/lora/corda.py -> build/lib/peft/tuners/lora
+  creating build/lib/peft/tuners/randlora
+  copying src/peft/tuners/randlora/config.py -> build/lib/peft/tuners/randlora
+  copying src/peft/tuners/randlora/__init__.py -> build/lib/peft/tuners/randlora
+  copying src/peft/tuners/randlora/model.py -> build/lib/peft/tuners/randlora
+  copying src/peft/tuners/randlora/layer.py -> build/lib/peft/tuners/randlora
+  copying src/peft/tuners/randlora/bnb.py -> build/lib/peft/tuners/randlora
+  creating build/lib/peft/tuners/oft
+  copying src/peft/tuners/oft/config.py -> build/lib/peft/tuners/oft
+  copying src/peft/tuners/oft/hqq.py -> build/lib/peft/tuners/oft
+  copying src/peft/tuners/oft/aqlm.py -> build/lib/peft/tuners/oft
+  copying src/peft/tuners/oft/__init__.py -> build/lib/peft/tuners/oft
+  copying src/peft/tuners/oft/model.py -> build/lib/peft/tuners/oft
+  copying src/peft/tuners/oft/inc.py -> build/lib/peft/tuners/oft
+  copying src/peft/tuners/oft/eetq.py -> build/lib/peft/tuners/oft
+  copying src/peft/tuners/oft/awq.py -> build/lib/peft/tuners/oft
+  copying src/peft/tuners/oft/gptq.py -> build/lib/peft/tuners/oft
+  copying src/peft/tuners/oft/layer.py -> build/lib/peft/tuners/oft
+  copying src/peft/tuners/oft/bnb.py -> build/lib/peft/tuners/oft
+  creating build/lib/peft/tuners/poly
+  copying src/peft/tuners/poly/config.py -> build/lib/peft/tuners/poly
+  copying src/peft/tuners/poly/__init__.py -> build/lib/peft/tuners/poly
+  copying src/peft/tuners/poly/model.py -> build/lib/peft/tuners/poly
+  copying src/peft/tuners/poly/layer.py -> build/lib/peft/tuners/poly
+  copying src/peft/tuners/poly/router.py -> build/lib/peft/tuners/poly
+  creating build/lib/peft/tuners/shira
+  copying src/peft/tuners/shira/config.py -> build/lib/peft/tuners/shira
+  copying src/peft/tuners/shira/mask_functions.py -> build/lib/peft/tuners/shira
+  copying src/peft/tuners/shira/__init__.py -> build/lib/peft/tuners/shira
+  copying src/peft/tuners/shira/model.py -> build/lib/peft/tuners/shira
+  copying src/peft/tuners/shira/layer.py -> build/lib/peft/tuners/shira
+  creating build/lib/peft/tuners/boft/fbd
+  copying src/peft/tuners/boft/fbd/__init__.py -> build/lib/peft/tuners/boft/fbd
+  copying src/peft/py.typed -> build/lib/peft
+  copying src/peft/tuners/boft/fbd/fbd_cuda.cpp -> build/lib/peft/tuners/boft/fbd
+  copying src/peft/tuners/boft/fbd/fbd_cuda_kernel.cu -> build/lib/peft/tuners/boft/fbd
+  installing to build/bdist.macosx-11.0-arm64/wheel
+  running install
+  running install_lib
+  creating build/bdist.macosx-11.0-arm64/wheel
+  creating build/bdist.macosx-11.0-arm64/wheel/peft
+  copying build/lib/peft/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft
+  copying build/lib/peft/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/utils
+  copying build/lib/peft/utils/loftq_utils.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/utils
+  copying build/lib/peft/utils/constants.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/utils
+  copying build/lib/peft/utils/hotswap.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/utils
+  copying build/lib/peft/utils/incremental_pca.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/utils
+  copying build/lib/peft/utils/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/utils
+  copying build/lib/peft/utils/merge_utils.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/utils
+  copying build/lib/peft/utils/other.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/utils
+  copying build/lib/peft/utils/warning.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/utils
+  copying build/lib/peft/utils/peft_types.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/utils
+  copying build/lib/peft/utils/save_and_load.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/utils
+  copying build/lib/peft/utils/integrations.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/utils
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/prompt_tuning
+  copying build/lib/peft/tuners/prompt_tuning/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/prompt_tuning
+  copying build/lib/peft/tuners/prompt_tuning/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/prompt_tuning
+  copying build/lib/peft/tuners/prompt_tuning/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/prompt_tuning
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/hra
+  copying build/lib/peft/tuners/hra/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/hra
+  copying build/lib/peft/tuners/hra/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/hra
+  copying build/lib/peft/tuners/hra/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/hra
+  copying build/lib/peft/tuners/hra/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/hra
+  copying build/lib/peft/tuners/_buffer_dict.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/loha
+  copying build/lib/peft/tuners/loha/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/loha
+  copying build/lib/peft/tuners/loha/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/loha
+  copying build/lib/peft/tuners/loha/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/loha
+  copying build/lib/peft/tuners/loha/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/loha
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/lokr
+  copying build/lib/peft/tuners/lokr/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lokr
+  copying build/lib/peft/tuners/lokr/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lokr
+  copying build/lib/peft/tuners/lokr/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lokr
+  copying build/lib/peft/tuners/lokr/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lokr
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/vera
+  copying build/lib/peft/tuners/vera/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/vera
+  copying build/lib/peft/tuners/vera/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/vera
+  copying build/lib/peft/tuners/vera/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/vera
+  copying build/lib/peft/tuners/vera/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/vera
+  copying build/lib/peft/tuners/vera/bnb.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/vera
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/ln_tuning
+  copying build/lib/peft/tuners/ln_tuning/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/ln_tuning
+  copying build/lib/peft/tuners/ln_tuning/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/ln_tuning
+  copying build/lib/peft/tuners/ln_tuning/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/ln_tuning
+  copying build/lib/peft/tuners/ln_tuning/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/ln_tuning
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/cpt
+  copying build/lib/peft/tuners/cpt/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/cpt
+  copying build/lib/peft/tuners/cpt/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/cpt
+  copying build/lib/peft/tuners/cpt/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/cpt
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/delora
+  copying build/lib/peft/tuners/delora/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/delora
+  copying build/lib/peft/tuners/delora/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/delora
+  copying build/lib/peft/tuners/delora/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/delora
+  copying build/lib/peft/tuners/delora/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/delora
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/boft
+  copying build/lib/peft/tuners/boft/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/boft
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/boft/fbd
+  copying build/lib/peft/tuners/boft/fbd/fbd_cuda_kernel.cu -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/boft/fbd
+  copying build/lib/peft/tuners/boft/fbd/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/boft/fbd
+  copying build/lib/peft/tuners/boft/fbd/fbd_cuda.cpp -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/boft/fbd
+  copying build/lib/peft/tuners/boft/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/boft
+  copying build/lib/peft/tuners/boft/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/boft
+  copying build/lib/peft/tuners/boft/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/boft
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/waveft
+  copying build/lib/peft/tuners/waveft/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/waveft
+  copying build/lib/peft/tuners/waveft/constants.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/waveft
+  copying build/lib/peft/tuners/waveft/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/waveft
+  copying build/lib/peft/tuners/waveft/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/waveft
+  copying build/lib/peft/tuners/waveft/wavelet.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/waveft
+  copying build/lib/peft/tuners/waveft/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/waveft
+  copying build/lib/peft/tuners/waveft/waverec2d.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/waveft
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/c3a
+  copying build/lib/peft/tuners/c3a/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/c3a
+  copying build/lib/peft/tuners/c3a/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/c3a
+  copying build/lib/peft/tuners/c3a/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/c3a
+  copying build/lib/peft/tuners/c3a/utils.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/c3a
+  copying build/lib/peft/tuners/c3a/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/c3a
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/p_tuning
+  copying build/lib/peft/tuners/p_tuning/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/p_tuning
+  copying build/lib/peft/tuners/p_tuning/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/p_tuning
+  copying build/lib/peft/tuners/p_tuning/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/p_tuning
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/mixed
+  copying build/lib/peft/tuners/mixed/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/mixed
+  copying build/lib/peft/tuners/mixed/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/mixed
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/trainable_tokens
+  copying build/lib/peft/tuners/trainable_tokens/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/trainable_tokens
+  copying build/lib/peft/tuners/trainable_tokens/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/trainable_tokens
+  copying build/lib/peft/tuners/trainable_tokens/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/trainable_tokens
+  copying build/lib/peft/tuners/trainable_tokens/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/trainable_tokens
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/bone
+  copying build/lib/peft/tuners/bone/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/bone
+  copying build/lib/peft/tuners/bone/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/bone
+  copying build/lib/peft/tuners/bone/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/bone
+  copying build/lib/peft/tuners/bone/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/bone
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/road
+  copying build/lib/peft/tuners/road/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/road
+  copying build/lib/peft/tuners/road/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/road
+  copying build/lib/peft/tuners/road/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/road
+  copying build/lib/peft/tuners/road/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/road
+  copying build/lib/peft/tuners/road/bnb.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/road
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/fourierft
+  copying build/lib/peft/tuners/fourierft/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/fourierft
+  copying build/lib/peft/tuners/fourierft/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/fourierft
+  copying build/lib/peft/tuners/fourierft/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/fourierft
+  copying build/lib/peft/tuners/fourierft/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/fourierft
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/vblora
+  copying build/lib/peft/tuners/vblora/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/vblora
+  copying build/lib/peft/tuners/vblora/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/vblora
+  copying build/lib/peft/tuners/vblora/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/vblora
+  copying build/lib/peft/tuners/vblora/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/vblora
+  copying build/lib/peft/tuners/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/prefix_tuning
+  copying build/lib/peft/tuners/prefix_tuning/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/prefix_tuning
+  copying build/lib/peft/tuners/prefix_tuning/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/prefix_tuning
+  copying build/lib/peft/tuners/prefix_tuning/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/prefix_tuning
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/adaption_prompt
+  copying build/lib/peft/tuners/adaption_prompt/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/adaption_prompt
+  copying build/lib/peft/tuners/adaption_prompt/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/adaption_prompt
+  copying build/lib/peft/tuners/adaption_prompt/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/adaption_prompt
+  copying build/lib/peft/tuners/adaption_prompt/utils.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/adaption_prompt
+  copying build/lib/peft/tuners/adaption_prompt/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/adaption_prompt
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/miss
+  copying build/lib/peft/tuners/miss/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/miss
+  copying build/lib/peft/tuners/miss/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/miss
+  copying build/lib/peft/tuners/miss/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/miss
+  copying build/lib/peft/tuners/miss/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/miss
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/ia3
+  copying build/lib/peft/tuners/ia3/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/ia3
+  copying build/lib/peft/tuners/ia3/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/ia3
+  copying build/lib/peft/tuners/ia3/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/ia3
+  copying build/lib/peft/tuners/ia3/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/ia3
+  copying build/lib/peft/tuners/ia3/bnb.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/ia3
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/osf
+  copying build/lib/peft/tuners/osf/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/osf
+  copying build/lib/peft/tuners/osf/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/osf
+  copying build/lib/peft/tuners/osf/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/osf
+  copying build/lib/peft/tuners/osf/utils.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/osf
+  copying build/lib/peft/tuners/osf/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/osf
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/xlora
+  copying build/lib/peft/tuners/xlora/classifier.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/xlora
+  copying build/lib/peft/tuners/xlora/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/xlora
+  copying build/lib/peft/tuners/xlora/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/xlora
+  copying build/lib/peft/tuners/xlora/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/xlora
+  copying build/lib/peft/tuners/xlora/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/xlora
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/adalora
+  copying build/lib/peft/tuners/adalora/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/adalora
+  copying build/lib/peft/tuners/adalora/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/adalora
+  copying build/lib/peft/tuners/adalora/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/adalora
+  copying build/lib/peft/tuners/adalora/gptq.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/adalora
+  copying build/lib/peft/tuners/adalora/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/adalora
+  copying build/lib/peft/tuners/adalora/bnb.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/adalora
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/multitask_prompt_tuning
+  copying build/lib/peft/tuners/multitask_prompt_tuning/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/multitask_prompt_tuning
+  copying build/lib/peft/tuners/multitask_prompt_tuning/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/multitask_prompt_tuning
+  copying build/lib/peft/tuners/multitask_prompt_tuning/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/multitask_prompt_tuning
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/lora
+  copying build/lib/peft/tuners/lora/dora.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/variants.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/hqq.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/aqlm.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/tp_layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/arrow.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/inc.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/eetq.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/eva.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/awq.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/gptq.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/torchao.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/bnb.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lora/corda.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/lora
+  copying build/lib/peft/tuners/lycoris_utils.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners
+  copying build/lib/peft/tuners/tuners_utils.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/randlora
+  copying build/lib/peft/tuners/randlora/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/randlora
+  copying build/lib/peft/tuners/randlora/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/randlora
+  copying build/lib/peft/tuners/randlora/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/randlora
+  copying build/lib/peft/tuners/randlora/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/randlora
+  copying build/lib/peft/tuners/randlora/bnb.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/randlora
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/oft
+  copying build/lib/peft/tuners/oft/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/oft
+  copying build/lib/peft/tuners/oft/hqq.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/oft
+  copying build/lib/peft/tuners/oft/aqlm.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/oft
+  copying build/lib/peft/tuners/oft/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/oft
+  copying build/lib/peft/tuners/oft/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/oft
+  copying build/lib/peft/tuners/oft/inc.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/oft
+  copying build/lib/peft/tuners/oft/eetq.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/oft
+  copying build/lib/peft/tuners/oft/awq.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/oft
+  copying build/lib/peft/tuners/oft/gptq.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/oft
+  copying build/lib/peft/tuners/oft/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/oft
+  copying build/lib/peft/tuners/oft/bnb.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/oft
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/poly
+  copying build/lib/peft/tuners/poly/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/poly
+  copying build/lib/peft/tuners/poly/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/poly
+  copying build/lib/peft/tuners/poly/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/poly
+  copying build/lib/peft/tuners/poly/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/poly
+  copying build/lib/peft/tuners/poly/router.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/poly
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/tuners/shira
+  copying build/lib/peft/tuners/shira/config.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/shira
+  copying build/lib/peft/tuners/shira/mask_functions.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/shira
+  copying build/lib/peft/tuners/shira/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/shira
+  copying build/lib/peft/tuners/shira/model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/shira
+  copying build/lib/peft/tuners/shira/layer.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/tuners/shira
+  creating build/bdist.macosx-11.0-arm64/wheel/peft/optimizers
+  copying build/lib/peft/optimizers/loraplus.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/optimizers
+  copying build/lib/peft/optimizers/__init__.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/optimizers
+  copying build/lib/peft/optimizers/lorafa.py -> build/bdist.macosx-11.0-arm64/wheel/./peft/optimizers
+  copying build/lib/peft/peft_model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft
+  copying build/lib/peft/functional.py -> build/bdist.macosx-11.0-arm64/wheel/./peft
+  copying build/lib/peft/mixed_model.py -> build/bdist.macosx-11.0-arm64/wheel/./peft
+  copying build/lib/peft/py.typed -> build/bdist.macosx-11.0-arm64/wheel/./peft
+  copying build/lib/peft/mapping_func.py -> build/bdist.macosx-11.0-arm64/wheel/./peft
+  copying build/lib/peft/import_utils.py -> build/bdist.macosx-11.0-arm64/wheel/./peft
+  copying build/lib/peft/mapping.py -> build/bdist.macosx-11.0-arm64/wheel/./peft
+  copying build/lib/peft/helpers.py -> build/bdist.macosx-11.0-arm64/wheel/./peft
+  copying build/lib/peft/auto.py -> build/bdist.macosx-11.0-arm64/wheel/./peft
+  running install_egg_info
+  running egg_info
+  creating src/peft.egg-info
+  writing src/peft.egg-info/PKG-INFO
+  writing dependency_links to src/peft.egg-info/dependency_links.txt
+  writing requirements to src/peft.egg-info/requires.txt
+  writing top-level names to src/peft.egg-info/top_level.txt
+  writing manifest file 'src/peft.egg-info/SOURCES.txt'
+  reading manifest file 'src/peft.egg-info/SOURCES.txt'
+  adding license file 'LICENSE'
+  writing manifest file 'src/peft.egg-info/SOURCES.txt'
+  Copying src/peft.egg-info to build/bdist.macosx-11.0-arm64/wheel/./peft-0.18.1-py3.12.egg-info
+  running install_scripts
+  creating build/bdist.macosx-11.0-arm64/wheel/peft-0.18.1.dist-info/WHEEL
+  creating '/private/tmp/pip-ephem-wheel-cache-_yks5_3c/wheels/c3/fd/72/0b4f6ca61d410d0c1bbd73e1043154ddbbc952fde9c9a2a34e/tmpfun5xptc/.tmp-4u23whjd/peft-0.18.1-py3-none-any.whl' and adding 'build/bdist.macosx-11.0-arm64/wheel' to it
+  adding 'peft/__init__.py'
+  adding 'peft/auto.py'
+  adding 'peft/config.py'
+  adding 'peft/functional.py'
+  adding 'peft/helpers.py'
+  adding 'peft/import_utils.py'
+  adding 'peft/mapping.py'
+  adding 'peft/mapping_func.py'
+  adding 'peft/mixed_model.py'
+  adding 'peft/peft_model.py'
+  adding 'peft/py.typed'
+  adding 'peft/optimizers/__init__.py'
+  adding 'peft/optimizers/lorafa.py'
+  adding 'peft/optimizers/loraplus.py'
+  adding 'peft/tuners/__init__.py'
+  adding 'peft/tuners/_buffer_dict.py'
+  adding 'peft/tuners/lycoris_utils.py'
+  adding 'peft/tuners/tuners_utils.py'
+  adding 'peft/tuners/adalora/__init__.py'
+  adding 'peft/tuners/adalora/bnb.py'
+  adding 'peft/tuners/adalora/config.py'
+  adding 'peft/tuners/adalora/gptq.py'
+  adding 'peft/tuners/adalora/layer.py'
+  adding 'peft/tuners/adalora/model.py'
+  adding 'peft/tuners/adaption_prompt/__init__.py'
+  adding 'peft/tuners/adaption_prompt/config.py'
+  adding 'peft/tuners/adaption_prompt/layer.py'
+  adding 'peft/tuners/adaption_prompt/model.py'
+  adding 'peft/tuners/adaption_prompt/utils.py'
+  adding 'peft/tuners/boft/__init__.py'
+  adding 'peft/tuners/boft/config.py'
+  adding 'peft/tuners/boft/layer.py'
+  adding 'peft/tuners/boft/model.py'
+  adding 'peft/tuners/boft/fbd/__init__.py'
+  adding 'peft/tuners/boft/fbd/fbd_cuda.cpp'
+  adding 'peft/tuners/boft/fbd/fbd_cuda_kernel.cu'
+  adding 'peft/tuners/bone/__init__.py'
+  adding 'peft/tuners/bone/config.py'
+  adding 'peft/tuners/bone/layer.py'
+  adding 'peft/tuners/bone/model.py'
+  adding 'peft/tuners/c3a/__init__.py'
+  adding 'peft/tuners/c3a/config.py'
+  adding 'peft/tuners/c3a/layer.py'
+  adding 'peft/tuners/c3a/model.py'
+  adding 'peft/tuners/c3a/utils.py'
+  adding 'peft/tuners/cpt/__init__.py'
+  adding 'peft/tuners/cpt/config.py'
+  adding 'peft/tuners/cpt/model.py'
+  adding 'peft/tuners/delora/__init__.py'
+  adding 'peft/tuners/delora/config.py'
+  adding 'peft/tuners/delora/layer.py'
+  adding 'peft/tuners/delora/model.py'
+  adding 'peft/tuners/fourierft/__init__.py'
+  adding 'peft/tuners/fourierft/config.py'
+  adding 'peft/tuners/fourierft/layer.py'
+  adding 'peft/tuners/fourierft/model.py'
+  adding 'peft/tuners/hra/__init__.py'
+  adding 'peft/tuners/hra/config.py'
+  adding 'peft/tuners/hra/layer.py'
+  adding 'peft/tuners/hra/model.py'
+  adding 'peft/tuners/ia3/__init__.py'
+  adding 'peft/tuners/ia3/bnb.py'
+  adding 'peft/tuners/ia3/config.py'
+  adding 'peft/tuners/ia3/layer.py'
+  adding 'peft/tuners/ia3/model.py'
+  adding 'peft/tuners/ln_tuning/__init__.py'
+  adding 'peft/tuners/ln_tuning/config.py'
+  adding 'peft/tuners/ln_tuning/layer.py'
+  adding 'peft/tuners/ln_tuning/model.py'
+  adding 'peft/tuners/loha/__init__.py'
+  adding 'peft/tuners/loha/config.py'
+  adding 'peft/tuners/loha/layer.py'
+  adding 'peft/tuners/loha/model.py'
+  adding 'peft/tuners/lokr/__init__.py'
+  adding 'peft/tuners/lokr/config.py'
+  adding 'peft/tuners/lokr/layer.py'
+  adding 'peft/tuners/lokr/model.py'
+  adding 'peft/tuners/lora/__init__.py'
+  adding 'peft/tuners/lora/aqlm.py'
+  adding 'peft/tuners/lora/arrow.py'
+  adding 'peft/tuners/lora/awq.py'
+  adding 'peft/tuners/lora/bnb.py'
+  adding 'peft/tuners/lora/config.py'
+  adding 'peft/tuners/lora/corda.py'
+  adding 'peft/tuners/lora/dora.py'
+  adding 'peft/tuners/lora/eetq.py'
+  adding 'peft/tuners/lora/eva.py'
+  adding 'peft/tuners/lora/gptq.py'
+  adding 'peft/tuners/lora/hqq.py'
+  adding 'peft/tuners/lora/inc.py'
+  adding 'peft/tuners/lora/layer.py'
+  adding 'peft/tuners/lora/model.py'
+  adding 'peft/tuners/lora/torchao.py'
+  adding 'peft/tuners/lora/tp_layer.py'
+  adding 'peft/tuners/lora/variants.py'
+  adding 'peft/tuners/miss/__init__.py'
+  adding 'peft/tuners/miss/config.py'
+  adding 'peft/tuners/miss/layer.py'
+  adding 'peft/tuners/miss/model.py'
+  adding 'peft/tuners/mixed/__init__.py'
+  adding 'peft/tuners/mixed/model.py'
+  adding 'peft/tuners/multitask_prompt_tuning/__init__.py'
+  adding 'peft/tuners/multitask_prompt_tuning/config.py'
+  adding 'peft/tuners/multitask_prompt_tuning/model.py'
+  adding 'peft/tuners/oft/__init__.py'
+  adding 'peft/tuners/oft/aqlm.py'
+  adding 'peft/tuners/oft/awq.py'
+  adding 'peft/tuners/oft/bnb.py'
+  adding 'peft/tuners/oft/config.py'
+  adding 'peft/tuners/oft/eetq.py'
+  adding 'peft/tuners/oft/gptq.py'
+  adding 'peft/tuners/oft/hqq.py'
+  adding 'peft/tuners/oft/inc.py'
+  adding 'peft/tuners/oft/layer.py'
+  adding 'peft/tuners/oft/model.py'
+  adding 'peft/tuners/osf/__init__.py'
+  adding 'peft/tuners/osf/config.py'
+  adding 'peft/tuners/osf/layer.py'
+  adding 'peft/tuners/osf/model.py'
+  adding 'peft/tuners/osf/utils.py'
+  adding 'peft/tuners/p_tuning/__init__.py'
+  adding 'peft/tuners/p_tuning/config.py'
+  adding 'peft/tuners/p_tuning/model.py'
+  adding 'peft/tuners/poly/__init__.py'
+  adding 'peft/tuners/poly/config.py'
+  adding 'peft/tuners/poly/layer.py'
+  adding 'peft/tuners/poly/model.py'
+  adding 'peft/tuners/poly/router.py'
+  adding 'peft/tuners/prefix_tuning/__init__.py'
+  adding 'peft/tuners/prefix_tuning/config.py'
+  adding 'peft/tuners/prefix_tuning/model.py'
+  adding 'peft/tuners/prompt_tuning/__init__.py'
+  adding 'peft/tuners/prompt_tuning/config.py'
+  adding 'peft/tuners/prompt_tuning/model.py'
+  adding 'peft/tuners/randlora/__init__.py'
+  adding 'peft/tuners/randlora/bnb.py'
+  adding 'peft/tuners/randlora/config.py'
+  adding 'peft/tuners/randlora/layer.py'
+  adding 'peft/tuners/randlora/model.py'
+  adding 'peft/tuners/road/__init__.py'
+  adding 'peft/tuners/road/bnb.py'
+  adding 'peft/tuners/road/config.py'
+  adding 'peft/tuners/road/layer.py'
+  adding 'peft/tuners/road/model.py'
+  adding 'peft/tuners/shira/__init__.py'
+  adding 'peft/tuners/shira/config.py'
+  adding 'peft/tuners/shira/layer.py'
+  adding 'peft/tuners/shira/mask_functions.py'
+  adding 'peft/tuners/shira/model.py'
+  adding 'peft/tuners/trainable_tokens/__init__.py'
+  adding 'peft/tuners/trainable_tokens/config.py'
+  adding 'peft/tuners/trainable_tokens/layer.py'
+  adding 'peft/tuners/trainable_tokens/model.py'
+  adding 'peft/tuners/vblora/__init__.py'
+  adding 'peft/tuners/vblora/config.py'
+  adding 'peft/tuners/vblora/layer.py'
+  adding 'peft/tuners/vblora/model.py'
+  adding 'peft/tuners/vera/__init__.py'
+  adding 'peft/tuners/vera/bnb.py'
+  adding 'peft/tuners/vera/config.py'
+  adding 'peft/tuners/vera/layer.py'
+  adding 'peft/tuners/vera/model.py'
+  adding 'peft/tuners/waveft/__init__.py'
+  adding 'peft/tuners/waveft/config.py'
+  adding 'peft/tuners/waveft/constants.py'
+  adding 'peft/tuners/waveft/layer.py'
+  adding 'peft/tuners/waveft/model.py'
+  adding 'peft/tuners/waveft/wavelet.py'
+  adding 'peft/tuners/waveft/waverec2d.py'
+  adding 'peft/tuners/xlora/__init__.py'
+  adding 'peft/tuners/xlora/classifier.py'
+  adding 'peft/tuners/xlora/config.py'
+  adding 'peft/tuners/xlora/layer.py'
+  adding 'peft/tuners/xlora/model.py'
+  adding 'peft/utils/__init__.py'
+  adding 'peft/utils/constants.py'
+  adding 'peft/utils/hotswap.py'
+  adding 'peft/utils/incremental_pca.py'
+  adding 'peft/utils/integrations.py'
+  adding 'peft/utils/loftq_utils.py'
+  adding 'peft/utils/merge_utils.py'
+  adding 'peft/utils/other.py'
+  adding 'peft/utils/peft_types.py'
+  adding 'peft/utils/save_and_load.py'
+  adding 'peft/utils/warning.py'
+  adding 'peft-0.18.1.dist-info/licenses/LICENSE'
+  adding 'peft-0.18.1.dist-info/METADATA'
+  adding 'peft-0.18.1.dist-info/WHEEL'
+  adding 'peft-0.18.1.dist-info/top_level.txt'
+  adding 'peft-0.18.1.dist-info/RECORD'
+  removing build/bdist.macosx-11.0-arm64/wheel
+Extracting download
+
+Rendered as:
+```yaml
+package:
+  name: peft
+  version: 0.18.1
+source:
+  url: https://github.com/huggingface/peft/archive/v0.18.1.tar.gz
+  sha256: 15f17cef72fd1091ae57045b1ec54c3123ae8c83128614b202f4920f86582078
+build:
+  number: '0'
+  script: /Users/lundby/anaconda/c22/peft_1769708449784/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl/bin/python
+    -m pip install --no-deps --no-build-isolation . -vv
+requirements:
+  host:
+    - bzip2 1.0.8 h80987f9_6
+    - ca-certificates 2025.12.2 hca03da5_0
+    - libcxx 21.1.8 hb4ce287_0
+    - libffi 3.4.4 hca03da5_1
+    - libzlib 1.3.1 h5f15de7_0
+    - ncurses 6.5 hee39554_0
+    - tzdata 2025c he532380_0
+    - xz 5.6.4 h80987f9_1
+    - libexpat 2.7.3 h50f4ffc_4
+    - openssl 3.0.18 h9b4081a_0
+    - readline 8.3 h0b18652_0
+    - zlib 1.3.1 h5f15de7_0
+    - expat 2.7.3 h50f4ffc_4
+    - sqlite 3.51.1 hab6afd1_0
+    - tk 8.6.15 hcd8a7d5_0
+    - python 3.12.12 h2bfc596_1
+    - packaging 25.0 py312hca03da5_1
+    - setuptools 80.10.1 py312hca03da5_0
+    - wheel 0.46.3 py312hca03da5_0
+    - pip 25.3 pyhc872135_0
+  run:
+    - tqdm
+    - packaging >=20.0
+    - transformers 4.57.1.*
+    - pytorch >=1.13.0
+    - numpy >=1.17
+    - pyyaml
+    - safetensors
+    - huggingface_hub >=0.25.0
+    - python >=3.12,<3.13.0a0
+    - huggingface_accelerate >=0.21.0
+    - psutil
+test:
+  source_files:
+    - tests
+  imports:
+    - peft
+  commands:
+    - pip check
+    - - pytest -vv tests -k "not (starcoder or bigcode)" --ignore=tests/test_common_gpu.py
+        --ignore=tests/test_gpu_examples.py --ignore=tests/test_torch_compile.py --ignore=tests/test_gptqmodel.py
+        --ignore=tests/regression/ --ignore=tests/test_adaption_prompt.py
+  requires:
+    - pytest-xdist
+    - pytest
+    - scipy
+    - sentencepiece
+    - datasets
+    - pip
+    - diffusers
+    - parameterized
+    - protobuf
+about:
+  home: https://github.com/huggingface/peft
+  license: Apache-2.0
+  license_file: LICENSE
+  license_family: Apache
+  dev_url: https://github.com/huggingface/peft
+  doc_url: https://huggingface.co/docs/peft/index
+  summary: state of the art parameter efficient fine tuning peft methods
+  description: 'Parameter-Efficient Fine-Tuning (PEFT) methods enable efficient adaptation
+    of pre-trained language models (PLMs) to various
+
+    downstream applications without fine-tuning all the model''s parameters. Fine-tuning
+    large-scale PLMs is often prohibitively costly.
+
+    In this regard, PEFT methods only fine-tune a small number of (extra) model parameters,
+    thereby greatly decreasing the computational
+
+    and storage costs. Recent State-of-the-Art PEFT techniques achieve performance
+    comparable to that of full fine-tuning.
+
+    '
+extra:
+  recipe-maintainers:
+    - markw77
+  final: true
+  copy_test_source_files: true
+```
+
+source tree in: /Users/lundby/anaconda/c22/peft_1769708449784/work
+export PREFIX=/Users/lundby/anaconda/c22/peft_1769708449784/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl
+export BUILD_PREFIX=/Users/lundby/anaconda/c22/peft_1769708449784/_build_env
+export SRC_DIR=/Users/lundby/anaconda/c22/peft_1769708449784/work
+Using pip 25.3 from $PREFIX/lib/python3.12/site-packages/pip (python 3.12)
+Non-user install because user site-packages disabled
+Ignoring indexes: https://pypi.org/simple
+Created temporary directory: /private/tmp/pip-build-tracker-zivjd39_
+Initialized build tracking at /private/tmp/pip-build-tracker-zivjd39_
+Created build tracker: /private/tmp/pip-build-tracker-zivjd39_
+Entered build tracker: /private/tmp/pip-build-tracker-zivjd39_
+Created temporary directory: /private/tmp/pip-install-_ip0o4j5
+Created temporary directory: /private/tmp/pip-ephem-wheel-cache-_yks5_3c
+Processing $SRC_DIR
+  Added file://$SRC_DIR to build tracker '/private/tmp/pip-build-tracker-zivjd39_'
+  Created temporary directory: /private/tmp/pip-modern-metadata-stscy_7g
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+  Source in $SRC_DIR has version 0.18.1, which satisfies requirement peft==0.18.1 from file://$SRC_DIR
+  Removed peft==0.18.1 from file://$SRC_DIR from build tracker '/private/tmp/pip-build-tracker-zivjd39_'
+Created temporary directory: /private/tmp/pip-unpack-7lon3fy3
+Building wheels for collected packages: peft
+  Destination directory: /private/tmp/pip-ephem-wheel-cache-_yks5_3c/wheels/c3/fd/72/0b4f6ca61d410d0c1bbd73e1043154ddbbc952fde9c9a2a34e/tmpfun5xptc
+  Building wheel for peft (pyproject.toml): started
+  Building wheel for peft (pyproject.toml): finished with status 'done'
+  Created wheel for peft: filename=peft-0.18.1-py3-none-any.whl size=556958 sha256=1ad33deead4fc99e1d39873eb5b128bdd82b8ac208d0d0f0b7e10a744f26a1aa
+  Stored in directory: /private/tmp/pip-ephem-wheel-cache-_yks5_3c/wheels/c3/fd/72/0b4f6ca61d410d0c1bbd73e1043154ddbbc952fde9c9a2a34e
+Successfully built peft
+Installing collected packages: peft
+
+Successfully installed peft-0.18.1
+Removed build tracker: '/private/tmp/pip-build-tracker-zivjd39_'
+
+Resource usage statistics from building peft:
+   Process count: 3
+   CPU time: Sys=0:00:00.1, User=0:00:00.1
+   Memory: 48.9M
+   Disk usage: 48.0K
+   Time elapsed: 0:00:04.1
+
+
+Packaging peft
+Packaging peft-0.18.1-py312hca03da5_0
+
+# >>>>>>>>>>>>>>>>>>>>>> ERROR REPORT <<<<<<<<<<<<<<<<<<<<<<
+
+    Traceback (most recent call last):
+      File "/Users/lundby/miniconda3/lib/python3.13/site-packages/conda/exception_handler.py", line 29, in __call__
+        return func(*args, **kwargs)
+      File "/Users/lundby/miniconda3/lib/python3.13/site-packages/conda/cli/main.py", line 61, in main_subshell
+        exit_code = do_call(args, parser)
+      File "/Users/lundby/miniconda3/lib/python3.13/site-packages/conda/cli/conda_argparse.py", line 181, in do_call
+        result = plugin_subcommand.action(getattr(args, "_args", args))
+      File "/Users/lundby/miniconda3/lib/python3.13/site-packages/conda_build/plugin.py", line 18, in build
+        return execute(args)
+      File "/Users/lundby/miniconda3/lib/python3.13/site-packages/conda_build/cli/main_build.py", line 622, in execute
+        api.build(
+        ~~~~~~~~~^
+            parsed.recipe,
+            ^^^^^^^^^^^^^^
+        ...<8 lines>...
+            cache_dir=parsed.cache_dir,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+      File "/Users/lundby/miniconda3/lib/python3.13/site-packages/conda_build/api.py", line 211, in build
+        return build_tree(
+            recipes,
+        ...<7 lines>...
+            variants=variants,
+        )
+      File "/Users/lundby/miniconda3/lib/python3.13/site-packages/conda_build/build.py", line 3669, in build_tree
+        packages_from_this = build(
+            metadata,
+        ...<5 lines>...
+            notest=notest,
+        )
+      File "/Users/lundby/miniconda3/lib/python3.13/site-packages/conda_build/build.py", line 2780, in build
+        newly_built_packages = bundlers[pkg_type](
+            output_d, m, env, stats, new_prefix_files
+        )
+      File "/Users/lundby/miniconda3/lib/python3.13/site-packages/conda_build/build.py", line 1898, in bundle_conda
+        output["checksums"] = create_info_files(
+                              ~~~~~~~~~~~~~~~~~^
+            metadata, replacements, files, prefix=metadata.config.host_prefix
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+      File "/Users/lundby/miniconda3/lib/python3.13/site-packages/conda_build/build.py", line 1417, in create_info_files
+        create_all_test_files(m, test_dir=join(m.config.info_dir, "test"))
+        ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/Users/lundby/miniconda3/lib/python3.13/site-packages/conda_build/create_test.py", line 298, in create_all_test_files
+        create_shell_files(m, test_dir),
+        ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+      File "/Users/lundby/miniconda3/lib/python3.13/site-packages/conda_build/create_test.py", line 86, in create_shell_files
+        f.write(cmd)
+        ~~~~~~~^^^^^
+    TypeError: write() argument must be str, not list
+
+`$ /Users/lundby/miniconda3/bin/conda build --croot=../c22 --python=3.12 peft-feedstock`
+
+  environment variables:
+                 CIO_TEST=<not set>
+CONDA_ADD_PIP_AS_PYTHON_DEPENDENCY=0
+    CONDA_ALLOW_SOFTLINKS=false
+   CONDA_BACKUP_JAVA_HOME=:-:-
+CONDA_BACKUP_JAVA_LD_LIBRARY_PATH=:-:-
+        CONDA_DEFAULT_ENV=base
+                CONDA_EXE=/Users/lundby/miniconda3/bin/conda
+             CONDA_PREFIX=/Users/lundby/miniconda3
+    CONDA_PROMPT_MODIFIER=(base)
+         CONDA_PYTHON_EXE=/Users/lundby/miniconda3/bin/python
+               CONDA_ROOT=/Users/lundby/miniconda3
+              CONDA_SHLVL=1
+           CURL_CA_BUNDLE=<not set>
+                 INFOPATH=/opt/homebrew/share/info:/opt/homebrew/share/info:
+     JAVA_LD_LIBRARY_PATH=/Users/lundby/miniconda3/lib/server
+               LD_PRELOAD=<not set>
+                     PATH=/Users/lundby/miniconda3/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr
+                          /local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin
+                          :/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local
+                          /bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/b
+                          in:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/app
+                          leinternal/bin:/Library/Apple/usr/bin:/Users/lundby/miniconda3/bin:/Us
+                          ers/lundby/miniconda3/condabin
+       REQUESTS_CA_BUNDLE=<not set>
+            SSL_CERT_FILE=<not set>
+
+     active environment : base
+    active env location : /Users/lundby/miniconda3
+            shell level : 1
+       user config file : /Users/lundby/.condarc
+ populated config files : /Users/lundby/miniconda3/.condarc
+                          /Users/lundby/miniconda3/condarc.d/registration.yml
+                          /Users/lundby/.condarc
+          conda version : 25.11.1
+    conda-build version : 25.9.0
+         python version : 3.13.9.final.0
+                 solver : libmamba (default)
+       virtual packages : __archspec=1=m1
+                          __conda=25.11.1=0
+                          __osx=15.6.1=0
+                          __unix=0=0
+       base environment : /Users/lundby/miniconda3  (writable)
+      conda av data dir : /Users/lundby/miniconda3/etc/conda
+  conda av metadata url : None
+           channel URLs : https://repo.anaconda.com/pkgs/main/osx-arm64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/osx-arm64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /Users/lundby/miniconda3/pkgs
+                          /Users/lundby/.conda/pkgs
+       envs directories : /Users/lundby/miniconda3/envs
+                          /Users/lundby/.conda/envs
+               platform : osx-arm64
+             user-agent : conda/25.11.1 requests/2.32.5 CPython/3.13.9 Darwin/24.6.0 OSX/15.6.1 solver/libmamba conda-libmamba-solver/25.4.0 libmambapy/2.3.2 aau/0.7.4 c/. s/. e/. a/. o/.
+                UID:GID : 502:20
+             netrc file : None
+           offline mode : False
+
+
+An unexpected error has occurred. Conda has prepared the above report.
+If you suspect this error is being caused by a malfunctioning plugin,
+consider using the --no-plugins option to turn off plugins.
+
+Example: conda --no-plugins install <package>
+
+Alternatively, you can set the CONDA_NO_PLUGINS environment variable on
+the command line to run the command without plugins enabled.
+
+Example: CONDA_NO_PLUGINS=true conda install <package>
+
+compiling .pyc files...
+number of files: 375
+Fixing permissions
+Packaged license file/s.
