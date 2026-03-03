@@ -34,12 +34,17 @@ requirements:
     - tqdm
 
 test:
+  source_files:
+    - tests
   imports:
     - peft
   commands:
     - pip check
+    - pytest -v tests/test_config.py tests/test_mapping.py tests/test_bufferdict.py -k "not pretrained and not remote"
   requires:
     - pip
+    - pytest
+    - parameterized
 
 about:
   home: https://github.com/huggingface/peft
