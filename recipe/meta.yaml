@@ -1,5 +1,5 @@
 {% set name = "peft" %}
-{% set version = "0.18.1" %}
+{% set version = "0.19.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/huggingface/peft/archive/v{{ version }}.tar.gz
-  sha256: 15f17cef72fd1091ae57045b1ec54c3123ae8c83128614b202f4920f86582078
+  sha256: 55c804e925796814fb7b6242e9e8698049591cdaf4706e69646b01add9c5844c
 
 build:
-  skip: True  # [s390x or ppc64le or py<310]
+  skip: true  # [s390x or ppc64le or py<310]
   number: 0
   script: {{ PYTHON }} -m pip install --no-deps --no-build-isolation . -vv
 
@@ -20,6 +20,7 @@ requirements:
     - pip
     - wheel
     - setuptools
+    - pytorch {{ pytorch }}
   run:
     - python
     - huggingface_accelerate >=0.21.0
@@ -30,8 +31,9 @@ requirements:
     - pytorch >=1.13.0
     - pyyaml
     - safetensors
-    - transformers >=4.36.0
+    - transformers
     - tqdm
+    - accelerate >=0.21.0
 
 test:
   source_files:
@@ -59,6 +61,16 @@ about:
     downstream applications without fine-tuning all the model's parameters. Fine-tuning large-scale PLMs is often prohibitively costly.
     In this regard, PEFT methods only fine-tune a small number of (extra) model parameters, thereby greatly decreasing the computational
     and storage costs. Recent State-of-the-Art PEFT techniques achieve performance comparable to that of full fine-tuning.
+
+
+
+
+
+
+
+
+
+
 
 extra:
   recipe-maintainers:
