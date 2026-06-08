@@ -1,5 +1,5 @@
 {% set name = "peft" %}
-{% set version = "0.18.1" %}
+{% set version = "0.19.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/huggingface/peft/archive/v{{ version }}.tar.gz
-  sha256: 15f17cef72fd1091ae57045b1ec54c3123ae8c83128614b202f4920f86582078
+  sha256: 55c804e925796814fb7b6242e9e8698049591cdaf4706e69646b01add9c5844c
 
 build:
-  skip: True  # [s390x or ppc64le or py<310]
   number: 0
   script: {{ PYTHON }} -m pip install --no-deps --no-build-isolation . -vv
+  skip: true  # [py<310]
 
 requirements:
   host:
@@ -22,16 +22,18 @@ requirements:
     - setuptools
   run:
     - python
-    - huggingface_accelerate >=0.21.0
-    - huggingface_hub >=0.25.0
     - numpy >=1.17
     - packaging >=20.0
     - psutil
-    - pytorch >=1.13.0
     - pyyaml
-    - safetensors
-    - transformers >=4.36.0
+    - pytorch >=1.13.0
+    - transformers
     - tqdm
+    - accelerate >=0.21.0
+    - safetensors
+    # accelerate -> huggingface_accelerate
+    - huggingface_accelerate >=0.21.0
+    - huggingface_hub >=0.25.0
 
 test:
   source_files:
@@ -45,6 +47,7 @@ test:
     - pip
     - pytest
     - parameterized
+    - scikit-learn
 
 about:
   home: https://github.com/huggingface/peft
