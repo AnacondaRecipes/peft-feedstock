@@ -50,7 +50,10 @@ test:
     - datasets
     - diffusers
     - scipy
-    - protobuf
+    # Pin protobuf to the 6.x series so solver picks libprotobuf >=6 — the unconstrained
+    # protobuf was letting solver lock in libprotobuf 3.20.x (via old protobuf python wheels),
+    # which then blocked arrow-cpp >=16 (required by recent datasets) on all four platforms.
+    - protobuf >=6
     - sentencepiece
 
 about:
