@@ -48,14 +48,13 @@ test:
     - pytest-xdist
     - parameterized
     - datasets
-    # Exclude legacy diffusers 0.11/0.18 which require numpy<2 and py<=3.11 — the solver
-    # falls back to those when the modern (0.36+) build has an env conflict, blocking test resolution.
-    - diffusers >=0.36
+    # diffusers dropped: pkgs/main's diffusers-base 0.36+ pins protobuf<4, which conflicts
+    # with the protobuf>=6 / arrow-cpp>=16 chain required to install modern datasets.
+    # Legacy diffusers 0.11/0.18 need numpy<2 and py<=3.11, so no version can coexist
+    # with the rest of the test env. peft's diffusers tests (test_stablediffusion.py) are
+    # model-download-heavy anyway and self-skip when diffusers is absent.
     - scipy
-    # Pin protobuf to the 6.x series so solver picks libprotobuf >=6 — the unconstrained
-    # protobuf was letting solver lock in libprotobuf 3.20.x (via old protobuf python wheels),
-    # which then blocked arrow-cpp >=16 (required by recent datasets) on all four platforms.
-    - protobuf >=6
+    - protobuf
     - sentencepiece
 
 about:
