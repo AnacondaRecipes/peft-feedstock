@@ -2,7 +2,7 @@
 {% set version = "0.20.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
@@ -43,7 +43,7 @@ test:
     - peft
   commands:
     - pip check
-    - pytest -v tests/test_config.py tests/test_mapping.py tests/test_bufferdict.py -k "not pretrained and not remote"
+    - pytest -vv tests/test_config.py tests/test_mapping.py tests/test_bufferdict.py -k "not pretrained and not remote"
   requires:
     - pip
     - pytest
