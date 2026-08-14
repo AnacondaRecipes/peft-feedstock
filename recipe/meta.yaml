@@ -34,7 +34,6 @@ requirements:
     # accelerate -> huggingface_accelerate
     - huggingface_accelerate >=0.21.0
     - huggingface_hub >=0.25.0
-    - pytorch >=1.13.0
 
 test:
   source_files:
