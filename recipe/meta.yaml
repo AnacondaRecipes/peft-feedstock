@@ -20,7 +20,6 @@ requirements:
     - pip
     - wheel
     - setuptools
-    - pytorch {{ pytorch }}
   run:
     - python
     - numpy >=1.17
@@ -35,6 +34,7 @@ requirements:
     # accelerate -> huggingface_accelerate
     - huggingface_accelerate >=0.21.0
     - huggingface_hub >=0.25.0
+    - pytorch >=1.13.0
 
 test:
   source_files:
@@ -63,16 +63,6 @@ about:
     downstream applications without fine-tuning all the model's parameters. Fine-tuning large-scale PLMs is often prohibitively costly.
     In this regard, PEFT methods only fine-tune a small number of (extra) model parameters, thereby greatly decreasing the computational
     and storage costs. Recent State-of-the-Art PEFT techniques achieve performance comparable to that of full fine-tuning.
-
-
-
-
-
-
-
-
-
-
 
 extra:
   recipe-maintainers:
