@@ -66,3 +66,5 @@ about:
 extra:
   recipe-maintainers:
     - markw77
+  skip-lints:
+    - cbc_dep_in_run_missing_from_host
