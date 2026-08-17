@@ -1,13 +1,13 @@
 {% set name = "peft" %}
-{% set version = "0.19.1" %}
+{% set version = "0.20.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
   url: https://github.com/huggingface/peft/archive/v{{ version }}.tar.gz
-  sha256: 55c804e925796814fb7b6242e9e8698049591cdaf4706e69646b01add9c5844c
+  sha256: c9cce5cf707628cdd92e2bdf0e889cd74b6f22bfdae6b7503870fc2863f0579a
 
 build:
   number: 0
@@ -42,7 +42,7 @@ test:
     - peft
   commands:
     - pip check
-    - pytest -v tests/test_config.py tests/test_mapping.py tests/test_bufferdict.py -k "not pretrained and not remote"
+    - pytest -vv tests/test_config.py tests/test_mapping.py tests/test_bufferdict.py -k "not pretrained and not remote"
   requires:
     - pip
     - pytest
@@ -66,3 +66,5 @@ about:
 extra:
   recipe-maintainers:
     - markw77
+  skip-lints:
+    - cbc_dep_in_run_missing_from_host
