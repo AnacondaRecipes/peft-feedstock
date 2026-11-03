@@ -42,6 +42,7 @@ test:
     - peft
   commands:
     - pip check
+    - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
     - pytest -vv tests/test_config.py tests/test_mapping.py tests/test_bufferdict.py -k "not pretrained and not remote"
   requires:
     - pip
