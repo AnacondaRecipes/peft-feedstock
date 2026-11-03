@@ -1,5 +1,5 @@
 {% set name = "peft" %}
-{% set version = "0.20.0" %}
+{% set version = "0.21.2" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/huggingface/peft/archive/v{{ version }}.tar.gz
-  sha256: c9cce5cf707628cdd92e2bdf0e889cd74b6f22bfdae6b7503870fc2863f0579a
+  sha256: 61b46a4a3c13b2deaa0f53dfd8a6050fd61c37901a4bb1f9907228f97e1143a8
 
 build:
   number: 0
@@ -42,6 +42,7 @@ test:
     - peft
   commands:
     - pip check
+    - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
     - pytest -vv tests/test_config.py tests/test_mapping.py tests/test_bufferdict.py -k "not pretrained and not remote"
   requires:
     - pip
