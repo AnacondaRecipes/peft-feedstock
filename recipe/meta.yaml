@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/huggingface/peft/archive/v{{ version }}.tar.gz
+  url: https://github.com/huggingface/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 360193e23c6dd49a491c22bc57bfbdcdea552747d639a3bab67fff2db7101524
 
 build:
@@ -18,7 +18,6 @@ requirements:
   host:
     - python
     - pip
-    - wheel
     - setuptools
   run:
     - python
@@ -31,8 +30,6 @@ requirements:
     - tqdm
     - accelerate >=0.21.0
     - safetensors
-    # accelerate -> huggingface_accelerate
-    - huggingface_accelerate >=0.21.0
     - huggingface_hub >=0.25.0
 
 test:
@@ -68,4 +65,4 @@ extra:
   recipe-maintainers:
     - markw77
   skip-lints:
-    - cbc_dep_in_run_missing_from_host
+    - cbc_dep_in_run_missing_from_host  # numpy/pytorch are runtime-only deps of this pure-Python package
