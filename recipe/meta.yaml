@@ -1,5 +1,5 @@
 {% set name = "peft" %}
-{% set version = "0.21.2" %}
+{% set version = "0.22.0" %}
 
 package:
   name: {{ name }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/huggingface/peft/archive/v{{ version }}.tar.gz
-  sha256: 61b46a4a3c13b2deaa0f53dfd8a6050fd61c37901a4bb1f9907228f97e1143a8
+  sha256: 360193e23c6dd49a491c22bc57bfbdcdea552747d639a3bab67fff2db7101524
 
 build:
   number: 0
   script: {{ PYTHON }} -m pip install --no-deps --no-build-isolation . -vv
-  skip: true  # [py<310]
+  skip: true  # [py<311]
 
 requirements:
   host:
